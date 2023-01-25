@@ -1,0 +1,5 @@
+### 1번
+GET http://127.0.0.1:8080/hello?name=Spring213123
+
+### 2번
+GET http://127.0.0.1:8080/user
