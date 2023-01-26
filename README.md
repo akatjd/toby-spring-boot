@@ -3,7 +3,7 @@
 
 ## 개발환경
 * SpringBoot 2.7.6
-* Open JDK 11.0.18-anzn Corretto
+* Open JDK 11.0.18-amzn Corretto
 * Gradle
 
 ## 유틸
