@@ -28,7 +28,7 @@ public class HelloApiTest {
         // startsWith는 비교 값으로 시작하면 맞는것으로 인식해줌.
         Assertions.assertThat(res.getHeaders().getFirst(HttpHeaders.CONTENT_TYPE)).startsWith(MediaType.TEXT_PLAIN_VALUE);
         // body Hello Spring
-        Assertions.assertThat(res.getBody()).isEqualTo("Hello Spring");
+        Assertions.assertThat(res.getBody()).isEqualTo("*Hello Spring*");
     }
 
     @Test
