@@ -22,8 +22,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@Configuration
-@ComponentScan
+//@Configuration
+//@ComponentScan
+@MySpringBootAnnotation
 public class TobySpringBootApplication {
 
 //    @Bean
@@ -37,15 +38,16 @@ public class TobySpringBootApplication {
 //    }
 
     // factory method
-    @Bean
-    public ServletWebServerFactory servletWebServerFactory() {
-        return new TomcatServletWebServerFactory();
-    }
-
-    @Bean
-    public DispatcherServlet dispatcherServlet() {
-        return new DispatcherServlet();
-    }
+    // Config class로 이동
+//    @Bean
+//    public ServletWebServerFactory servletWebServerFactory() {
+//        return new TomcatServletWebServerFactory();
+//    }
+//
+//    @Bean
+//    public DispatcherServlet dispatcherServlet() {
+//        return new DispatcherServlet();
+//    }
 
     public static void main(String[] args) {
 //        MySpringApplication.run(TobySpringBootApplication.class, args);
