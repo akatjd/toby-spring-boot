@@ -42,6 +42,29 @@ public class HelloController {
         return helloService.sayHello(Objects.requireNonNull(name));
     }
 
+
+    int cnt = 0;
+    @GetMapping("/1")
+//    @ResponseBody
+    public void hello1() throws InterruptedException {
+        for(int i=0; cnt<100; i++) {
+            System.out.println("hello 1 :: " + cnt);
+            Thread.sleep(500);
+            cnt++;
+        }
+    }
+
+    @GetMapping("/2")
+    public void hello2() throws InterruptedException{
+        for(int i=0; cnt<100; i++) {
+            System.out.println("mmmmmello 2 :: " + cnt);
+            Thread.sleep(500);
+            cnt++;
+        }
+    }
+
+
+
 //    @Override
 //    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
 //        System.out.println(applicationContext);
